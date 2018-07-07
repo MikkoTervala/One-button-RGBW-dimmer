@@ -1,0 +1,992 @@
+EESchema Schematic File Version 4
+LIBS:Auto RGBW ohjain-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 9650 2350 700  650 
+U 5AF7EF1D
+F0 "LT1934_PSU" 50
+F1 "LT1934_PSU.sch" 50
+$EndSheet
+$Comp
+L wemos_mini:WeMos_mini U1
+U 1 1 5AF7F74C
+P 3200 2050
+F 0 "U1" H 3200 2793 60  0000 C CNN
+F 1 "WeMos_mini" H 3200 2687 60  0000 C CNN
+F 2 "wemos_d1_mini:D1_mini_board" H 3750 1350 60  0001 C CNN
+F 3 "http://www.wemos.cc/Products/d1_mini.html" H 3200 2581 60  0000 C CNN
+	1    3200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5AF7F895
+P 5000 1700
+F 0 "#PWR0101" H 5000 1550 50  0001 C CNN
+F 1 "+3.3V" V 5015 1828 50  0000 L CNN
+F 2 "" H 5000 1700 50  0001 C CNN
+F 3 "" H 5000 1700 50  0001 C CNN
+	1    5000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5AF7F8F3
+P 2100 1800
+F 0 "#PWR0102" H 2100 1550 50  0001 C CNN
+F 1 "GND" V 2105 1672 50  0000 R CNN
+F 2 "" H 2100 1800 50  0001 C CNN
+F 3 "" H 2100 1800 50  0001 C CNN
+	1    2100 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5AF7F985
+P 4550 3650
+F 0 "F1" V 4500 3900 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 3550 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 3450 50  0001 L CNN
+F 3 "~" H 4550 3650 50  0001 C CNN
+F 4 "C126817" V 4550 3650 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 3650 50  0001 C CNN "Manufacture Part Number"
+	1    4550 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F2
+U 1 1 5AF80CAF
+P 4550 3750
+F 0 "F2" V 4500 4000 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 3650 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 3550 50  0001 L CNN
+F 3 "~" H 4550 3750 50  0001 C CNN
+F 4 "C126817" V 4550 3750 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 3750 50  0001 C CNN "Manufacture Part Number"
+	1    4550 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F3
+U 1 1 5AF80CC9
+P 4550 3850
+F 0 "F3" V 4500 4100 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 3750 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 3650 50  0001 L CNN
+F 3 "~" H 4550 3850 50  0001 C CNN
+F 4 "C126817" V 4550 3850 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 3850 50  0001 C CNN "Manufacture Part Number"
+	1    4550 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F4
+U 1 1 5AF80CE2
+P 4550 3950
+F 0 "F4" V 4500 4200 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 3850 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 3750 50  0001 L CNN
+F 3 "~" H 4550 3950 50  0001 C CNN
+F 4 "C126817" V 4550 3950 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 3950 50  0001 C CNN "Manufacture Part Number"
+	1    4550 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Specialized:Conn_01x05_Male J1
+U 1 1 5AF819CA
+P 5250 3850
+F 0 "J1" H 5223 3780 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5223 3871 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 5250 3850 50  0001 C CNN
+F 3 "~" H 5250 3850 50  0001 C CNN
+	1    5250 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 5AF81B32
+P 4650 4050
+F 0 "#PWR0103" H 4650 3900 50  0001 C CNN
+F 1 "+12V" V 4665 4178 50  0000 L CNN
+F 2 "" H 4650 4050 50  0001 C CNN
+F 3 "" H 4650 4050 50  0001 C CNN
+	1    4650 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L aOmat_osat:IRF7307 Q1
+U 1 1 5AF84550
+P 1450 3950
+F 0 "Q1" V 1400 3700 50  0000 C CNN
+F 1 "IRF7307" V 1600 3650 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2350 3900 50  0001 C CNN
+F 3 "" H 1650 4100 50  0001 C CNN
+F 4 "Hylly" H 1750 4200 50  0001 C CNN "Varasto"
+	1    1450 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L aOmat_osat:IRF7307 Q2
+U 1 1 5AF84974
+P 1450 4450
+F 0 "Q2" V 1400 4200 50  0000 C CNN
+F 1 "IRF7307" V 1600 4150 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2350 4400 50  0001 C CNN
+F 3 "" H 1650 4600 50  0001 C CNN
+F 4 "Hylly" H 1750 4700 50  0001 C CNN "Varasto"
+	1    1450 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L aOmat_osat:IRF7307 Q3
+U 1 1 5AF84A03
+P 1450 4950
+F 0 "Q3" V 1400 4700 50  0000 C CNN
+F 1 "IRF7307" V 1600 4650 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2350 4900 50  0001 C CNN
+F 3 "" H 1650 5100 50  0001 C CNN
+F 4 "Hylly" H 1750 5200 50  0001 C CNN "Varasto"
+	1    1450 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L aOmat_osat:IRF7307 Q4
+U 1 1 5AF84A95
+P 1450 5450
+F 0 "Q4" V 1400 5200 50  0000 C CNN
+F 1 "IRF7307" V 1600 5150 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 2350 5400 50  0001 C CNN
+F 3 "" H 1650 5600 50  0001 C CNN
+F 4 "Hylly" H 1750 5700 50  0001 C CNN "Varasto"
+	1    1450 5450
+	0    1    1    0   
+$EndComp
+Text GLabel 1900 4700 2    50   Input ~ 0
+fet_R
+Text GLabel 1900 5200 2    50   Input ~ 0
+fet_G
+Text GLabel 1900 3650 2    50   Input ~ 0
+fet_B
+Text GLabel 1900 4200 2    50   Input ~ 0
+fet_W
+$Comp
+L power:GND #PWR0104
+U 1 1 5AF8554F
+P 900 5750
+F 0 "#PWR0104" H 900 5500 50  0001 C CNN
+F 1 "GND" H 905 5577 50  0000 C CNN
+F 2 "" H 900 5750 50  0001 C CNN
+F 3 "" H 900 5750 50  0001 C CNN
+	1    900  5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5500 900  5500
+Wire Wire Line
+	900  5500 900  5750
+Wire Wire Line
+	1250 5000 900  5000
+Wire Wire Line
+	900  5000 900  5500
+Connection ~ 900  5500
+Wire Wire Line
+	1250 4500 900  4500
+Wire Wire Line
+	900  4500 900  5000
+Connection ~ 900  5000
+Wire Wire Line
+	1250 4000 900  4000
+Wire Wire Line
+	900  4000 900  4500
+Connection ~ 900  4500
+Text GLabel 2400 2200 0    50   Input ~ 0
+fet_G
+Text GLabel 2400 2100 0    50   Input ~ 0
+fet_R
+Text GLabel 2400 2000 0    50   Input ~ 0
+fet_B
+Text GLabel 2400 1900 0    50   Input ~ 0
+fet_W
+Wire Wire Line
+	2400 1900 2700 1900
+Wire Wire Line
+	2700 2000 2400 2000
+Wire Wire Line
+	2400 2100 2700 2100
+Wire Wire Line
+	2700 2200 2400 2200
+Wire Wire Line
+	3700 1700 3900 1700
+Wire Wire Line
+	2700 1800 2100 1800
+Wire Wire Line
+	4650 3650 5050 3650
+Wire Wire Line
+	5050 3750 4650 3750
+Wire Wire Line
+	4650 3850 5050 3850
+Wire Wire Line
+	5050 3950 4650 3950
+Wire Wire Line
+	4650 4050 5050 4050
+$Comp
+L Device:Polyfuse_Small F5
+U 1 1 5AF8C085
+P 4550 4250
+F 0 "F5" V 4500 4500 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 4150 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4050 50  0001 L CNN
+F 3 "~" H 4550 4250 50  0001 C CNN
+F 4 "C126817" V 4550 4250 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 4250 50  0001 C CNN "Manufacture Part Number"
+	1    4550 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F6
+U 1 1 5AF8C08E
+P 4550 4350
+F 0 "F6" V 4500 4600 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 4250 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4150 50  0001 L CNN
+F 3 "~" H 4550 4350 50  0001 C CNN
+F 4 "C126817" V 4550 4350 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 4350 50  0001 C CNN "Manufacture Part Number"
+	1    4550 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F7
+U 1 1 5AF8C097
+P 4550 4450
+F 0 "F7" V 4500 4700 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 4350 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4250 50  0001 L CNN
+F 3 "~" H 4550 4450 50  0001 C CNN
+F 4 "C126817" V 4550 4450 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 4450 50  0001 C CNN "Manufacture Part Number"
+	1    4550 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F8
+U 1 1 5AF8C0A0
+P 4550 4550
+F 0 "F8" V 4500 4800 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 4450 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4350 50  0001 L CNN
+F 3 "~" H 4550 4550 50  0001 C CNN
+F 4 "C126817" V 4550 4550 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 4550 50  0001 C CNN "Manufacture Part Number"
+	1    4550 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Specialized:Conn_01x05_Male J2
+U 1 1 5AF8C0A7
+P 5250 4450
+F 0 "J2" H 5223 4380 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5223 4471 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 5250 4450 50  0001 C CNN
+F 3 "~" H 5250 4450 50  0001 C CNN
+	1    5250 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0105
+U 1 1 5AF8C0AE
+P 4650 4650
+F 0 "#PWR0105" H 4650 4500 50  0001 C CNN
+F 1 "+12V" V 4665 4778 50  0000 L CNN
+F 2 "" H 4650 4650 50  0001 C CNN
+F 3 "" H 4650 4650 50  0001 C CNN
+	1    4650 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 4250 5050 4250
+Wire Wire Line
+	5050 4350 4650 4350
+Wire Wire Line
+	4650 4450 5050 4450
+Wire Wire Line
+	5050 4550 4650 4550
+Wire Wire Line
+	4650 4650 5050 4650
+$Comp
+L Device:Polyfuse_Small F9
+U 1 1 5AF8C49B
+P 4550 4850
+F 0 "F9" V 4500 5100 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 4750 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4650 50  0001 L CNN
+F 3 "~" H 4550 4850 50  0001 C CNN
+F 4 "C126817" V 4550 4850 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 4850 50  0001 C CNN "Manufacture Part Number"
+	1    4550 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F10
+U 1 1 5AF8C4A4
+P 4550 4950
+F 0 "F10" V 4500 5200 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 4850 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4750 50  0001 L CNN
+F 3 "~" H 4550 4950 50  0001 C CNN
+F 4 "C126817" V 4550 4950 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 4950 50  0001 C CNN "Manufacture Part Number"
+	1    4550 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F11
+U 1 1 5AF8C4AD
+P 4550 5050
+F 0 "F11" V 4500 5300 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 4950 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4850 50  0001 L CNN
+F 3 "~" H 4550 5050 50  0001 C CNN
+F 4 "C126817" V 4550 5050 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 5050 50  0001 C CNN "Manufacture Part Number"
+	1    4550 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F12
+U 1 1 5AF8C4B6
+P 4550 5150
+F 0 "F12" V 4500 5400 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 5050 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 4950 50  0001 L CNN
+F 3 "~" H 4550 5150 50  0001 C CNN
+F 4 "C126817" V 4550 5150 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 5150 50  0001 C CNN "Manufacture Part Number"
+	1    4550 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Specialized:Conn_01x05_Male J3
+U 1 1 5AF8C4BD
+P 5250 5050
+F 0 "J3" H 5223 4980 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5223 5071 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 5250 5050 50  0001 C CNN
+F 3 "~" H 5250 5050 50  0001 C CNN
+	1    5250 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0106
+U 1 1 5AF8C4C4
+P 4650 5250
+F 0 "#PWR0106" H 4650 5100 50  0001 C CNN
+F 1 "+12V" V 4665 5378 50  0000 L CNN
+F 2 "" H 4650 5250 50  0001 C CNN
+F 3 "" H 4650 5250 50  0001 C CNN
+	1    4650 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 4850 5050 4850
+Wire Wire Line
+	5050 4950 4650 4950
+Wire Wire Line
+	4650 5050 5050 5050
+Wire Wire Line
+	5050 5150 4650 5150
+Wire Wire Line
+	4650 5250 5050 5250
+$Comp
+L Device:Polyfuse_Small F13
+U 1 1 5AF8CA2D
+P 4550 5450
+F 0 "F13" V 4500 5700 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 5350 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 5250 50  0001 L CNN
+F 3 "~" H 4550 5450 50  0001 C CNN
+F 4 "C126817" V 4550 5450 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 5450 50  0001 C CNN "Manufacture Part Number"
+	1    4550 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F14
+U 1 1 5AF8CA36
+P 4550 5550
+F 0 "F14" V 4500 5800 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 5450 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 5350 50  0001 L CNN
+F 3 "~" H 4550 5550 50  0001 C CNN
+F 4 "C126817" V 4550 5550 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 5550 50  0001 C CNN "Manufacture Part Number"
+	1    4550 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F15
+U 1 1 5AF8CA3F
+P 4550 5650
+F 0 "F15" V 4500 5900 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 5550 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 5450 50  0001 L CNN
+F 3 "~" H 4550 5650 50  0001 C CNN
+F 4 "C126817" V 4550 5650 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 5650 50  0001 C CNN "Manufacture Part Number"
+	1    4550 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F16
+U 1 1 5AF8CA48
+P 4550 5750
+F 0 "F16" V 4500 6000 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 5650 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 5550 50  0001 L CNN
+F 3 "~" H 4550 5750 50  0001 C CNN
+F 4 "C126817" V 4550 5750 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 5750 50  0001 C CNN "Manufacture Part Number"
+	1    4550 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Specialized:Conn_01x05_Male J4
+U 1 1 5AF8CA4F
+P 5250 5650
+F 0 "J4" H 5223 5580 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5223 5671 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 5250 5650 50  0001 C CNN
+F 3 "~" H 5250 5650 50  0001 C CNN
+	1    5250 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 5AF8CA56
+P 4650 5850
+F 0 "#PWR0107" H 4650 5700 50  0001 C CNN
+F 1 "+12V" V 4665 5978 50  0000 L CNN
+F 2 "" H 4650 5850 50  0001 C CNN
+F 3 "" H 4650 5850 50  0001 C CNN
+	1    4650 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 5450 5050 5450
+Wire Wire Line
+	5050 5550 4650 5550
+Wire Wire Line
+	4650 5650 5050 5650
+Wire Wire Line
+	5050 5750 4650 5750
+Wire Wire Line
+	4650 5850 5050 5850
+$Comp
+L Device:Polyfuse_Small F17
+U 1 1 5AF8D19A
+P 4550 6050
+F 0 "F17" V 4500 6300 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 5950 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 5850 50  0001 L CNN
+F 3 "~" H 4550 6050 50  0001 C CNN
+F 4 "C126817" V 4550 6050 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6050 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F18
+U 1 1 5AF8D1A3
+P 4550 6150
+F 0 "F18" V 4500 6400 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 6050 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 5950 50  0001 L CNN
+F 3 "~" H 4550 6150 50  0001 C CNN
+F 4 "C126817" V 4550 6150 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6150 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F19
+U 1 1 5AF8D1AC
+P 4550 6250
+F 0 "F19" V 4500 6500 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 6150 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 6050 50  0001 L CNN
+F 3 "~" H 4550 6250 50  0001 C CNN
+F 4 "C126817" V 4550 6250 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6250 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F20
+U 1 1 5AF8D1B5
+P 4550 6350
+F 0 "F20" V 4500 6600 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 6250 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 6150 50  0001 L CNN
+F 3 "~" H 4550 6350 50  0001 C CNN
+F 4 "C126817" V 4550 6350 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6350 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Specialized:Conn_01x05_Male J5
+U 1 1 5AF8D1BC
+P 5250 6250
+F 0 "J5" H 5223 6180 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5223 6271 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 5250 6250 50  0001 C CNN
+F 3 "~" H 5250 6250 50  0001 C CNN
+	1    5250 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0108
+U 1 1 5AF8D1C3
+P 4650 6450
+F 0 "#PWR0108" H 4650 6300 50  0001 C CNN
+F 1 "+12V" V 4665 6578 50  0000 L CNN
+F 2 "" H 4650 6450 50  0001 C CNN
+F 3 "" H 4650 6450 50  0001 C CNN
+	1    4650 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 6050 5050 6050
+Wire Wire Line
+	5050 6150 4650 6150
+Wire Wire Line
+	4650 6250 5050 6250
+Wire Wire Line
+	5050 6350 4650 6350
+Wire Wire Line
+	4650 6450 5050 6450
+Wire Wire Line
+	4450 3650 3900 3650
+Wire Wire Line
+	3900 3650 3900 4250
+Wire Wire Line
+	3900 6050 4450 6050
+Wire Wire Line
+	4450 5450 3900 5450
+Connection ~ 3900 5450
+Wire Wire Line
+	3900 5450 3900 6050
+Wire Wire Line
+	4450 4850 3900 4850
+Connection ~ 3900 4850
+Wire Wire Line
+	3900 4850 3900 5450
+Wire Wire Line
+	4450 4250 3900 4250
+Connection ~ 3900 4250
+Wire Wire Line
+	3900 4250 3900 4850
+Wire Wire Line
+	4450 3750 3800 3750
+Wire Wire Line
+	3800 3750 3800 4350
+Wire Wire Line
+	3800 6150 4450 6150
+Wire Wire Line
+	4450 4350 3800 4350
+Connection ~ 3800 4350
+Wire Wire Line
+	4450 4950 3800 4950
+Wire Wire Line
+	3800 4350 3800 4950
+Connection ~ 3800 4950
+Wire Wire Line
+	4450 5550 3800 5550
+Wire Wire Line
+	3800 4950 3800 5550
+Connection ~ 3800 5550
+Wire Wire Line
+	3800 5550 3800 6150
+Wire Wire Line
+	4450 3850 3700 3850
+Wire Wire Line
+	3700 6250 4450 6250
+Wire Wire Line
+	4450 5650 3700 5650
+Connection ~ 3700 5650
+Wire Wire Line
+	3700 5650 3700 6250
+Wire Wire Line
+	4450 5050 3700 5050
+Connection ~ 3700 5050
+Wire Wire Line
+	3700 5050 3700 5650
+Wire Wire Line
+	4450 4450 3700 4450
+Wire Wire Line
+	3700 3850 3700 4450
+Connection ~ 3700 4450
+Wire Wire Line
+	3700 4450 3700 5050
+Wire Wire Line
+	4450 3950 3600 3950
+Wire Wire Line
+	3600 6350 4450 6350
+Wire Wire Line
+	4450 5750 3600 5750
+Connection ~ 3600 5750
+Wire Wire Line
+	3600 5750 3600 6350
+Wire Wire Line
+	4450 5150 3600 5150
+Connection ~ 3600 5150
+Wire Wire Line
+	3600 5150 3600 5750
+Wire Wire Line
+	4450 4550 3600 4550
+Wire Wire Line
+	3600 3950 3600 4550
+Connection ~ 3600 4550
+Wire Wire Line
+	3600 4550 3600 5150
+Wire Wire Line
+	2250 4000 2250 3650
+Wire Wire Line
+	2250 3650 3900 3650
+Connection ~ 3900 3650
+Wire Wire Line
+	3800 3750 2350 3750
+Wire Wire Line
+	2350 3750 2350 4500
+Connection ~ 3800 3750
+Wire Wire Line
+	2450 5000 2450 3850
+Wire Wire Line
+	2450 3850 3700 3850
+Connection ~ 3700 3850
+Wire Wire Line
+	3600 3950 2550 3950
+Wire Wire Line
+	2550 3950 2550 5500
+Connection ~ 3600 3950
+$Comp
+L Device:CP1_Small C1
+U 1 1 5AFB49F0
+P 900 3350
+F 0 "C1" H 991 3396 50  0000 L CNN
+F 1 "100uF" H 991 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 900 3350 50  0001 C CNN
+F 3 "~" H 900 3350 50  0001 C CNN
+F 4 "Tilatti" H 900 3350 50  0001 C CNN "Varasto"
+	1    900  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5AFB49F8
+P 1350 3350
+F 0 "C2" H 1442 3396 50  0000 L CNN
+F 1 "10uF" H 1442 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1350 3350 50  0001 C CNN
+F 3 "~" H 1350 3350 50  0001 C CNN
+F 4 "kela" H 1350 3350 50  0001 C CNN "Varasto"
+	1    1350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0109
+U 1 1 5AFBC864
+P 900 3050
+F 0 "#PWR0109" H 900 2900 50  0001 C CNN
+F 1 "+12V" H 915 3223 50  0000 C CNN
+F 2 "" H 900 3050 50  0001 C CNN
+F 3 "" H 900 3050 50  0001 C CNN
+	1    900  3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3250 900  3250
+Wire Wire Line
+	900  3250 900  3050
+Connection ~ 900  3250
+Wire Wire Line
+	1350 3450 900  3450
+Wire Wire Line
+	900  3450 900  4000
+Connection ~ 900  3450
+Connection ~ 900  4000
+$Comp
+L Device:C_Small C3
+U 1 1 5AFC7D4A
+P 3900 1600
+F 0 "C3" H 3992 1646 50  0000 L CNN
+F 1 "10uF" H 3992 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3900 1600 50  0001 C CNN
+F 3 "~" H 3900 1600 50  0001 C CNN
+F 4 "kela" H 3900 1600 50  0001 C CNN "Varasto"
+	1    3900 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 1700
+$Comp
+L power:GND #PWR0110
+U 1 1 5AFC8023
+P 3900 1400
+F 0 "#PWR0110" H 3900 1150 50  0001 C CNN
+F 1 "GND" V 3905 1272 50  0000 R CNN
+F 2 "" H 3900 1400 50  0001 C CNN
+F 3 "" H 3900 1400 50  0001 C CNN
+	1    3900 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 1400 3900 1500
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5AFCB783
+P 10250 3950
+F 0 "J7" H 10330 3992 50  0000 L CNN
+F 1 "Conn_01x03" H 10330 3901 50  0000 L CNN
+F 2 "aOmat_liittimet:WJ250B-3.50-3P" H 10250 3950 50  0001 C CNN
+F 3 "~" H 10250 3950 50  0001 C CNN
+	1    10250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5AFCB9FB
+P 9700 3950
+F 0 "#PWR0111" H 9700 3700 50  0001 C CNN
+F 1 "GND" V 9705 3822 50  0000 R CNN
+F 2 "" H 9700 3950 50  0001 C CNN
+F 3 "" H 9700 3950 50  0001 C CNN
+	1    9700 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0112
+U 1 1 5AFCBA8A
+P 9700 3850
+F 0 "#PWR0112" H 9700 3700 50  0001 C CNN
+F 1 "+12V" V 9715 3978 50  0000 L CNN
+F 2 "" H 9700 3850 50  0001 C CNN
+F 3 "" H 9700 3850 50  0001 C CNN
+	1    9700 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9700 3850 10050 3850
+Wire Wire Line
+	10050 3950 9950 3950
+Wire Wire Line
+	1650 4000 2250 4000
+Wire Wire Line
+	1650 4500 2350 4500
+Wire Wire Line
+	1650 5000 2450 5000
+Wire Wire Line
+	1650 5500 2550 5500
+Wire Wire Line
+	1450 3700 1450 3650
+Wire Wire Line
+	1450 3650 1900 3650
+Wire Wire Line
+	1900 4200 1450 4200
+Wire Wire Line
+	1450 4700 1900 4700
+Wire Wire Line
+	1900 5200 1450 5200
+$Comp
+L Device:Polyfuse_Small F21
+U 1 1 5AFF9ED8
+P 4550 6650
+F 0 "F21" V 4500 6900 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 6550 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 6450 50  0001 L CNN
+F 3 "~" H 4550 6650 50  0001 C CNN
+F 4 "C126817" V 4550 6650 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6650 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F22
+U 1 1 5AFF9EE1
+P 4550 6750
+F 0 "F22" V 4500 7000 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 6650 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 6550 50  0001 L CNN
+F 3 "~" H 4550 6750 50  0001 C CNN
+F 4 "C126817" V 4550 6750 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6750 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F23
+U 1 1 5AFF9EEA
+P 4550 6850
+F 0 "F23" V 4500 7100 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 6750 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 6650 50  0001 L CNN
+F 3 "~" H 4550 6850 50  0001 C CNN
+F 4 "C126817" V 4550 6850 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6850 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F24
+U 1 1 5AFF9EF3
+P 4550 6950
+F 0 "F24" V 4500 7200 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4500 6850 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 4600 6750 50  0001 L CNN
+F 3 "~" H 4550 6950 50  0001 C CNN
+F 4 "C126817" V 4550 6950 50  0001 C CNN "LCSC Part Number"
+F 5 "1206L035/16YR" V 4550 6950 50  0001 C CNN "Manufacture Part Number"
+	1    4550 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Specialized:Conn_01x05_Male J6
+U 1 1 5AFF9EFA
+P 5250 6850
+F 0 "J6" H 5223 6780 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 5223 6871 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B05B-XH-A_1x05_P2.50mm_Vertical" H 5250 6850 50  0001 C CNN
+F 3 "~" H 5250 6850 50  0001 C CNN
+	1    5250 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0113
+U 1 1 5AFF9F01
+P 4650 7050
+F 0 "#PWR0113" H 4650 6900 50  0001 C CNN
+F 1 "+12V" V 4665 7178 50  0000 L CNN
+F 2 "" H 4650 7050 50  0001 C CNN
+F 3 "" H 4650 7050 50  0001 C CNN
+	1    4650 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 6650 5050 6650
+Wire Wire Line
+	5050 6750 4650 6750
+Wire Wire Line
+	4650 6850 5050 6850
+Wire Wire Line
+	5050 6950 4650 6950
+Wire Wire Line
+	4650 7050 5050 7050
+Wire Wire Line
+	3900 6650 4450 6650
+Wire Wire Line
+	3800 6750 4450 6750
+Wire Wire Line
+	3700 6850 4450 6850
+Wire Wire Line
+	3600 6950 4450 6950
+Wire Wire Line
+	3600 6950 3600 6350
+Connection ~ 3600 6350
+Wire Wire Line
+	3700 6850 3700 6250
+Connection ~ 3700 6250
+Wire Wire Line
+	3800 6750 3800 6150
+Connection ~ 3800 6150
+Wire Wire Line
+	3900 6650 3900 6050
+Connection ~ 3900 6050
+Wire Wire Line
+	10050 4050 9950 4050
+Wire Wire Line
+	9950 4050 9950 3950
+Connection ~ 9950 3950
+Wire Wire Line
+	9950 3950 9700 3950
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5B10D6A5
+P 5350 1900
+F 0 "J8" H 5430 1942 50  0000 L CNN
+F 1 "Conn_01x03" H 5430 1851 50  0000 L CNN
+F 2 "aOmat_liittimet:WJ250B-3.50-3P" H 5350 1900 50  0001 C CNN
+F 3 "~" H 5350 1900 50  0001 C CNN
+	1    5350 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5B12372E
+P 4850 1600
+F 0 "#PWR0114" H 4850 1350 50  0001 C CNN
+F 1 "GND" V 4855 1472 50  0000 R CNN
+F 2 "" H 4850 1600 50  0001 C CNN
+F 3 "" H 4850 1600 50  0001 C CNN
+	1    4850 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0115
+U 1 1 5B130AE7
+P 4300 1700
+F 0 "#PWR0115" H 4300 1550 50  0001 C CNN
+F 1 "+3.3V" V 4315 1828 50  0000 L CNN
+F 2 "" H 4300 1700 50  0001 C CNN
+F 3 "" H 4300 1700 50  0001 C CNN
+	1    4300 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1700 4300 1700
+Wire Wire Line
+	5000 1700 5000 1800
+Wire Wire Line
+	5000 1800 5150 1800
+Wire Wire Line
+	3700 1900 3900 1900
+Wire Wire Line
+	3900 1900 3900 2000
+Wire Wire Line
+	3900 2000 5150 2000
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 5B147359
+P 4550 1800
+F 0 "JP1" V 4550 2000 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" V 4450 2400 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 4550 1800 50  0001 C CNN
+F 3 "~" H 4550 1800 50  0001 C CNN
+	1    4550 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1800 4350 1800
+Wire Wire Line
+	4750 1800 4850 1800
+Wire Wire Line
+	4850 1600 4850 1800
+Wire Wire Line
+	4550 1950 4750 1950
+Wire Wire Line
+	4750 1950 4750 1900
+Wire Wire Line
+	4750 1900 5150 1900
+$EndSCHEMATC

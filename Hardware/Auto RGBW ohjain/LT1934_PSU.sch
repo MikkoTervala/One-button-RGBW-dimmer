@@ -1,0 +1,347 @@
+EESchema Schematic File Version 4
+LIBS:Auto RGBW ohjain-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L aOmat_osat:LT1934 U5
+U 1 1 5ABF61C1
+P 4700 3550
+F 0 "U5" H 4700 4128 50  0000 C CNN
+F 1 "LT1934" H 4700 4037 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4750 3300 50  0001 L CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/1934fe.pdf" H 4800 3550 50  0001 C CNN
+	1    4700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5ABF62AF
+P 4100 3400
+F 0 "C6" H 3985 3354 50  0000 R CNN
+F 1 "1uF" H 3985 3445 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4138 3250 50  0001 C CNN
+F 3 "~" H 4100 3400 50  0001 C CNN
+F 4 "Laatikko" H 4100 3400 50  0001 C CNN "Varasto"
+	1    4100 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5ABF633B
+P 5450 3050
+F 0 "C7" H 5565 3096 50  0000 L CNN
+F 1 "0.1uF" H 5565 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5488 2900 50  0001 C CNN
+F 3 "~" H 5450 3050 50  0001 C CNN
+F 4 "GRM2165C2A101JA01D" H 5450 3050 50  0001 C CNN "Manufacture Part Number"
+F 5 "C97903" H 5450 3050 50  0001 C CNN "LCSC Part Number"
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5ABF656E
+P 6000 3250
+F 0 "L1" V 6190 3250 50  0000 C CNN
+F 1 "68uH" V 6099 3250 50  0000 C CNN
+F 2 "aOmat_osat:L_SUMIDA_CDRH5D28" H 6000 3250 50  0001 C CNN
+F 3 "~" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:MBR0540 D2
+U 1 1 5ABF6A2D
+P 6000 2900
+F 0 "D2" H 6000 3116 50  0000 C CNN
+F 1 "MBR0540" H 6000 3025 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6000 2725 50  0001 C CNN
+F 3 "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf" H 6000 2900 50  0001 C CNN
+F 4 "MBR0540L-CA2-R" H 6000 2900 50  0001 C CNN "Manufacture Part Number"
+F 5 "C89706" H 6000 2900 50  0001 C CNN "LCSC Part Number"
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5ABF6AC1
+P 4700 4200
+F 0 "#PWR0130" H 4700 3950 50  0001 C CNN
+F 1 "GND" H 4705 4027 50  0000 C CNN
+F 2 "" H 4700 4200 50  0001 C CNN
+F 3 "" H 4700 4200 50  0001 C CNN
+	1    4700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0131
+U 1 1 5ABF6AF8
+P 6550 3250
+F 0 "#PWR0131" H 6550 3100 50  0001 C CNN
+F 1 "+3.3V" V 6565 3378 50  0000 L CNN
+F 2 "" H 6550 3250 50  0001 C CNN
+F 3 "" H 6550 3250 50  0001 C CNN
+	1    6550 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0132
+U 1 1 5ABF6B60
+P 3700 3250
+F 0 "#PWR0132" H 3700 3100 50  0001 C CNN
+F 1 "+12V" V 3715 3378 50  0000 L CNN
+F 2 "" H 3700 3250 50  0001 C CNN
+F 3 "" H 3700 3250 50  0001 C CNN
+	1    3700 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 3250 3750 3250
+Wire Wire Line
+	4300 3250 4100 3250
+Connection ~ 4100 3250
+Wire Wire Line
+	4100 3550 4100 3900
+Wire Wire Line
+	4100 3900 4700 3900
+Wire Wire Line
+	4700 3900 4700 3850
+Wire Wire Line
+	4700 4200 4700 3900
+Connection ~ 4700 3900
+Wire Wire Line
+	5450 3200 5450 3250
+Wire Wire Line
+	5450 3250 5850 3250
+Wire Wire Line
+	6150 3250 6350 3250
+Connection ~ 6350 3250
+Wire Wire Line
+	6350 3250 6500 3250
+Wire Wire Line
+	6150 2900 6350 2900
+Wire Wire Line
+	6350 2900 6350 3250
+Wire Wire Line
+	5850 2900 5450 2900
+Wire Wire Line
+	5450 2900 4700 2900
+Wire Wire Line
+	4700 2900 4700 3150
+Connection ~ 5450 2900
+$Comp
+L Device:R_Small R3
+U 1 1 5ABF7456
+P 6000 3450
+F 0 "R3" H 6059 3496 50  0000 L CNN
+F 1 "1M" H 6059 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6000 3450 50  0001 C CNN
+F 3 "~" H 6000 3450 50  0001 C CNN
+F 4 "0805W8F1004T5E" H 6000 3450 50  0001 C CNN "Manufacture Part Number"
+F 5 "C17514" H 6000 3450 50  0001 C CNN "LCSC Part Number"
+	1    6000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5ABF74BC
+P 5900 3750
+F 0 "R2" H 5959 3796 50  0000 L CNN
+F 1 "604k" H 5959 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 3750 50  0001 C CNN
+F 3 "~" H 5900 3750 50  0001 C CNN
+F 4 "0805W8F6043T5E" H 5900 3750 50  0001 C CNN "Manufacture Part Number"
+F 5 "C17776" H 5900 3750 50  0001 C CNN "LCSC Part Number"
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3350 6000 3350
+Wire Wire Line
+	6350 3350 6000 3350
+Connection ~ 6350 3350
+Wire Wire Line
+	6350 3350 6350 3250
+Connection ~ 6000 3350
+Wire Wire Line
+	5900 3850 5900 3900
+Connection ~ 5900 3900
+Wire Wire Line
+	5100 3650 5850 3650
+$Comp
+L Device:C_Small C8
+U 1 1 5ABF7752
+P 5850 3450
+F 0 "C8" H 5759 3404 50  0000 R CNN
+F 1 "10pF" H 5759 3495 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5850 3450 50  0001 C CNN
+F 3 "~" H 5850 3450 50  0001 C CNN
+F 4 "Tilaa uusi LCSC!" H 5850 3450 50  0001 C CNN "Varasto"
+	1    5850 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5900 3650 6000 3650
+Wire Wire Line
+	6000 3650 6000 3550
+Connection ~ 5900 3650
+Wire Wire Line
+	5850 3550 5850 3650
+Connection ~ 5850 3650
+Wire Wire Line
+	5850 3650 5900 3650
+$Comp
+L Device:CP1_Small C9
+U 1 1 5ABF9A0D
+P 6350 3800
+F 0 "C9" H 6441 3846 50  0000 L CNN
+F 1 "120uF" H 6441 3755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6350 3800 50  0001 C CNN
+F 3 "~" H 6350 3800 50  0001 C CNN
+F 4 "pussi" H 6350 3800 50  0001 C CNN "Varasto"
+	1    6350 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3350 6350 3600
+$Comp
+L Device:C_Small C10
+U 1 1 5AC226E6
+P 6800 3800
+F 0 "C10" H 6892 3846 50  0000 L CNN
+F 1 "10uF" H 6892 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 6800 3800 50  0001 C CNN
+F 3 "~" H 6800 3800 50  0001 C CNN
+F 4 "kela" H 6800 3800 50  0001 C CNN "Varasto"
+	1    6800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3700 6800 3600
+Wire Wire Line
+	6800 3600 6350 3600
+Connection ~ 6350 3600
+Wire Wire Line
+	6350 3600 6350 3700
+$Comp
+L Device:C C5
+U 1 1 5AC233BD
+P 3800 3400
+F 0 "C5" H 3685 3354 50  0000 R CNN
+F 1 "1uF" H 3685 3445 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3838 3250 50  0001 C CNN
+F 3 "~" H 3800 3400 50  0001 C CNN
+F 4 "Laatikko" H 3800 3400 50  0001 C CNN "Varasto"
+	1    3800 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 3350 3800 3250
+Connection ~ 3800 3250
+Wire Wire Line
+	3800 3250 4100 3250
+Wire Wire Line
+	3800 3550 4100 3550
+Connection ~ 4100 3550
+$Comp
+L Connector_Specialized:Test_Point TP13
+U 1 1 5AC480A7
+P 6500 3200
+F 0 "TP13" H 6558 3320 50  0000 L CNN
+F 1 "3.3v_Out" H 6558 3229 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D2.50mm_Drill1.0mm" H 6700 3200 50  0001 C CNN
+F 3 "~" H 6700 3200 50  0001 C CNN
+	1    6500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3200 6500 3250
+Connection ~ 6500 3250
+Wire Wire Line
+	6500 3250 6550 3250
+Wire Wire Line
+	4700 3900 5250 3900
+$Comp
+L Diode:MBR0540 D1
+U 1 1 5ABF66CF
+P 5250 3450
+F 0 "D1" V 5296 3371 50  0000 R CNN
+F 1 "MBR0540" V 5205 3371 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 5250 3275 50  0001 C CNN
+F 3 "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf" H 5250 3450 50  0001 C CNN
+F 4 "MBR0540L-CA2-R" H 5250 3450 50  0001 C CNN "Manufacture Part Number"
+F 5 "C89706" H 5250 3450 50  0001 C CNN "LCSC Part Number"
+	1    5250 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3250 5250 3250
+Connection ~ 5450 3250
+Wire Wire Line
+	5250 3300 5250 3250
+Connection ~ 5250 3250
+Wire Wire Line
+	5250 3250 5450 3250
+Wire Wire Line
+	5250 3600 5250 3900
+Connection ~ 5250 3900
+Wire Wire Line
+	5250 3900 5900 3900
+$Comp
+L Connector_Specialized:Test_Point TP14
+U 1 1 5AD7A853
+P 4000 3650
+F 0 "TP14" V 4000 4350 50  0000 C CNN
+F 1 "SHDN" V 4000 4050 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4200 3650 50  0001 C CNN
+F 3 "~" H 4200 3650 50  0001 C CNN
+	1    4000 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 3650 4300 3650
+Connection ~ 6350 3900
+Wire Wire Line
+	6800 3900 6350 3900
+Wire Wire Line
+	5900 3900 6350 3900
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5AFE2F25
+P 3750 3850
+F 0 "JP2" H 3750 3950 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 4050 4050 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3750 3850 50  0001 C CNN
+F 3 "~" H 3750 3850 50  0001 C CNN
+	1    3750 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 3850 4000 3850
+Wire Wire Line
+	4000 3850 4000 3650
+Connection ~ 4000 3650
+Wire Wire Line
+	4000 3650 3950 3650
+Wire Wire Line
+	3600 3850 3600 3300
+Wire Wire Line
+	3600 3300 3750 3300
+Wire Wire Line
+	3750 3300 3750 3250
+Connection ~ 3750 3250
+Wire Wire Line
+	3750 3250 3800 3250
+$EndSCHEMATC
