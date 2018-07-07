@@ -7,4 +7,4 @@ Other features include:
 
 Microcontroller is the ESP8266 and code is written in arduino. Kicad is used for the PCB design.
 
-[Imgur](https://i.imgur.com/RgLIqG8.jpg)
+![Imgur](http://i.imgur.com/RgLIqG8.jpg)
